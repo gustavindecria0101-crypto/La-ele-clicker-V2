@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main id="app">
+    <div class="top-row">
+      <div class="stats">
+        <div class="points" id="points">0</div>
+        <div class="sub">lá ele points</div>
+      </div>
+      <div class="prestige" id="prestige">Prestige: 0</div>
+    </div>
+
+    <button id="clickerBtn" class="clicker" aria-label="clicker">
+      <img id="icon" class="clicker-img" src="/OIP (1).webp" alt="clicker image" draggable="false" />
+    </button>
+
+    <div class="bottom-row">
+      <div class="panel">
+        <h3>Store</h3>
+        <div id="store" class="store"></div>
+      </div>
+
+      <div class="panel">
+        <h3>Badges</h3>
+        <div id="badges" class="badges"></div>
+      </div>
+    </div>
+
+    <div class="pens" aria-hidden="true">
+      <span class="pen">🖊️</span>
+      <span class="pen">🖊️</span>
+      <span class="pen">🖊️</span>
+    </div>
+
+    <div class="controls">
+      <div class="info">Per click: <span id="perClick">1</span> · Per second: <span id="perSec">0</span></div>
+      <div class="actions">
+        <button id="prestigeBtn" class="btn danger">Prestige</button>
+        <button id="resetBtn" class="btn">Reset</button>
+      </div>
+    </div>
+  </main>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
